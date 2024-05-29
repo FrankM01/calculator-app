@@ -1,49 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
 body {
+    font-family: 'Edmunds', sans-serif;                                       
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
-    margin: 0;
+    background-color: skyblue;
 }
 
-.calculator {
-    border-radius: 10px;
+h1 {
+    font-family: 'Saiyan Sans', sans-serif;
+    font-family: 'Saiyan Sans - Left Oblique', sans-serif;
+    font-family: 'Saiyan Sans - Right Oblique', sans-serif;
+    text-align: center;
+    color: #000;
+    font-size: 4em;
+
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ccorp {
+    width: 100px;
+    height: 100px;
+}
+
+
+.semi-circle {
+    background-color: #fff;
+    height: 75px;
+    width: 125px;
+    border-radius: 75px 75px 0 0;
+    position: relative;
+    box-shadow: inset 0 0 20px #000,
+        inset -40px -10px 20px rgba(3, 32, 56, 0.7);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+}
+
+.border {
+    background: #e8e4e4;
+    border-radius: 50%;
+    border: 1px solid #222;
+    overflow: hidden;
+    box-shadow: inset 0 0 20px #000,
+        inset -40px -10px 20px rgba(3, 32, 56, 0.7);
+}
+
+.calculator-content {
+    margin: 30px;
+    border-radius: 100%;
+    border: 2px solid #222;
     overflow: hidden;
     width: 300px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 300px;
 }
 
 .calculator-display {
     background-color: #222;
-    color: #fff;
-    text-align: right;
+    color: red;
+    text-align: center;
     padding: 20px;
-    font-size: 2em;
-    box-sizing: border-box;
+    font-size: 1.8em;
 }
 
 .calculator-buttons {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Cambiar a 4 más adelante */
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, .1fr);
 }
 
 .button {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    color: black;
+    background-color: #2ac541;
+    border: 1px solid #222;
     font-size: 1.5em;
-    padding: 20px;
+    padding: 10px;
     cursor: pointer;
     outline: none;
     transition: background-color 0.3s;
+    font-family: 'Edmunds', sans-serif;   
 }
 
 .button:hover {
-    background-color: #f0f0f0;
+    background-color: yellow;
+    color: red;
 }
-
-h1{
-    text-align: center;
-    color: #222;
-    font-size: 2em;
-    padding: 20px;}

@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: skyblue;
+    background: url(images/ccorp-bg.webp) no-repeat center center/cover;
 }
 
 h1 {
@@ -23,8 +23,14 @@ h1 {
 
 }
 .title {
+    padding: 10px;
+    border: 10px solid black;
+    border-radius: 40%;
+    background: rgb(180,175,58);
+background: linear-gradient(90deg, rgba(180,175,58,1) 0%, rgba(192,128,75,1) 8%, rgba(253,164,29,1) 50%, rgba(252,228,69,1) 100%);
+    color:white;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 

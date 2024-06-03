@@ -39,7 +39,12 @@ function operate(operator, firstNumber, secondNumber) {
 
 function updateDisplay() {
     const display = document.getElementById('display');
-    display.textContent = currentInput;
+    if(currentInput.length > 7){
+        display.textContent = 'TooLong'
+    }else{
+
+        display.textContent = currentInput;
+    }
 }
 
 function inputDigit(digit) {

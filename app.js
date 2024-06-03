@@ -147,4 +147,17 @@ document.getElementById('btn-clear').addEventListener('click', function () {
     clearDisplay();
 });
 
+document.addEventListener('keydown', function(event) {
+    const key = event.key;
+    if (key >= '0' && key <= '9') {
+        inputDigit(parseInt(key));
+    } else if (key === '+' || key === '-' || key === '*' || key === '/') {
+        inputOperator(key);
+    } else if (key === 'Enter') {
+        calculateResult();
+    } else if (key === 'Escape') {
+        clearDisplay();
+    }
+});
+
 
